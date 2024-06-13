@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shah Diagnostic Center Kondhwa</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .punchline {
+        background-color: #f8f9fa; /* Example background color */
+        padding: 20px; /* Example padding */
+        border-radius: 5px; /* Example rounded corners */
+      }
+      .inner-box {
+        background-color: #fff; /* Example background color for inner box */
+        padding: 15px; /* Example padding */
+        border-radius: 5px; /* Example rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+      }
+      .banner-section {
+        background-color: #99dae7;
+        padding: 20px;
+      }
+      .custom-img {
+        width: 100%; /* Full width */
+        height: 400px; /* Set height */
+        object-fit: cover; /* Maintain aspect ratio and cover the area */
+      }
+
+      .test-section {
+        background-color: gainsboro;
+      }
+      .popular-test {
+        background-color: gainsboro;
+      }
+      .card-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+      }
+      .card-container .card {
+        min-width: calc(33.333% - 1rem);
+        margin-right: 1rem;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        text-align: center; /* Center the text within the card */
+      }
+      .card-container::-webkit-scrollbar {
+        display: none;
+      }
+      .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 1000;
+      }
+      .carousel-control-prev {
+        left: 0;
+      }
+      .carousel-control-next {
+        right: 0;
+      }
+      .card img {
+        max-width: 30%;
+        height: auto;
+        object-fit: contain;
+        margin: 0 auto; /* Center the image horizontally */
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        cursor: pointer;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(187, 182, 182, 0.5);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+      }
+      .carousel-control-prev {
+        left: 0;
+      }
+      .carousel-control-next {
+        right: 0;
+      }
+      .carousel-control-prev span,
+      .carousel-control-next span {
+        font-size: 30px;
+        color: #fff;
+      }
+      .card-container {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      .card {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .bg-blue {
+        background-color: #007bff; /* Bootstrap primary blue color */
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .bg-blue .media-body h5 {
+        color: white;
+      }
+      
+     
+    </style>
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center p-4 bg-light"
+    >
+      <div class="logo1">
+        <img src="" alt="Logo" class="img-fluid" />
+      </div>
+      <div class="call1">
+        <a href="tel:8446961990" class="text-decoration-none">
+          <div class="d-flex align-items-center">
+            Call us at <span class="ml-2">8446961990</span>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <div class="banner-section w-full h[100vh]">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 d-flex align-items-center">
+            <h4 class="text">
+              Comprehensive diagnostic and
+              <strong>Full body Check up</strong>
+              at Affordable Prices for you and <br />
+              your family.
+            </h4>
+          </div>
+          <div class="col-md-6 d-flex align-items-center rounded-lg">
+            <img src="Images/lab banner.jpg" alt="banner" class="custom-img" />
+          </div>
+
+          <div class="col-md-4">
+            <div class="container rounded-lg bg-primary p-3">
+              <h4 class="mb-4 text-dark mt-4">BOOK YOUR TEST</h4>
+              <form action="index-action.php" method="post">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    placeholder="Name*"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="phone"
+                    placeholder="Mobile No.*"
+                    onkeypress="return isNumberKey(event)"
+                    required
+                  />
+                  <div class="error text-danger"></div>
+                </div>
+                <div class="d-none">
+                  <input type="hidden" name="utm_source" value="SEM" />
+                  <input type="hidden" name="utm_campaign" value="competitor" />
+                  <input type="hidden" name="utm_medium" value="" />
+                  <input type="hidden" name="utm_adgroup" value="" />
+                  <input
+                    type="hidden"
+                    name="utm_term"
+                    value="blood testing services"
+                  />
+                  <input type="hidden" name="utm_network" value="Search" />
+                  <input type="hidden" name="location" value="India" />
+                  <input type="hidden" name="campaign_id" value="20370720185" />
+                  <input type="hidden" name="adgroup_id" value="155006781567" />
+                  <input
+                    type="hidden"
+                    name="keyword"
+                    value="blood testing services"
+                  />
+                  <input type="hidden" name="speciality" value="" />
+                  <input type="hidden" name="email" value="formfill@SEM.Com" />
+                </div>
+                <div class="mb-3">
+                  <select
+                    class="form-select"
+                    name="packages"
+                    id="package-select"
+                    required
+                  >
+                    <option value="" hidden>Select</option>
+                    <option value="Regular Full Body Health Check">
+                      Regular Full Body Health Check
+                    </option>
+                    <option value="Basic Full Body Check">
+                      Basic Full Body Check
+                    </option>
+                    <option value="Basic Women Hormones Check">
+                      Basic Women Hormones Check
+                    </option>
+                    <option value="Regular Women Health Check">
+                      Regular Women Health Check
+                    </option>
+                    <option value="Regular Heart Care">
+                      Regular Heart Care
+                    </option>
+                    <option value="Basic Heart Care">Basic Heart Care</option>
+                    <option value="Basic Diabetes Defence">
+                      Basic Diabetes Defence
+                    </option>
+                    <option value="Basic Thyroid Care">
+                      Basic Thyroid Care
+                    </option>
+                    <option value="Basic Health Stomach">
+                      Basic Health Stomach
+                    </option>
+                    <option value="Lipid Profile">Lipid Profile</option>
+                    <option value="Liver Function Test (LFT)">
+                      Liver Function Test (LFT)
+                    </option>
+                    <option value="RT PCR Test">RT PCR Test</option>
+                    <option value="C-reactive Protein CRP (Quantitative)">
+                      C-reactive Protein CRP (Quantitative)
+                    </option>
+                    <option value="Thyroid Stimulating Hormone (TSH), Serum">
+                      Thyroid Stimulating Hormone (TSH), Serum
+                    </option>
+                    <option value="Complete Urine Examination">
+                      Complete Urine Examination
+                    </option>
+                    <option value="Thyroid Profile (Total T3, Total T4, TSH)">
+                      Thyroid Profile (Total T3, Total T4, TSH)
+                    </option>
+                    <option value="HBA1C, Glycated Hemoglobin">
+                      HBA1C, Glycated Hemoglobin
+                    </option>
+                    <option value="Culture and Sensitivity Urine">
+                      Culture and Sensitivity Urine
+                    </option>
+                    <option value="Ayush Women Check">Ayush Women Check</option>
+                    <option value="Ayush Senior Citizen Male">
+                      Ayush Senior Citizen Male
+                    </option>
+                    <option value="Ayush Senior Citizen Female">
+                      Ayush Senior Citizen Female
+                    </option>
+                    <option value="Ayush Screening">Ayush Screening</option>
+                    <option value="Ayush Basic">Ayush Basic</option>
+                    <option value="Ayush Master">Ayush Master</option>
+                    <option value="Ayush Comprehensive">
+                      Ayush Comprehensive
+                    </option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="submit"
+                    class="btn btn-danger"
+                    name="Submit"
+                    value="SUBMIT"
+                  />
+                </div>
+              </form>
+              <div class="mt-4">
+                <p>*All fields are mandatory.</p>
+                <p>Home sample collection will be applicable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next Section All Popular Test-->
+
+    <section>
+      <div class="container">
+        <div class="text-center mt-4">
+          <h4>ALL POPULAR TEST</h4>
+          <p>Avail attractive prices on our special monsoon offer</p>
+        </div>
+      </div>
+
+      <div class="container my-4 position-relative">
+        <div class="carousel-control carousel-control-prev" id="prevBtn">
+          <span aria-label="Previous"></span>
+        </div>
+        <div class="carousel-control carousel-control-next" id="nextBtn">
+          <span aria-label="Next "></span>
+        </div>
+        <div class="row g-4 card-container">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/urine.png"
+                class="card-img-top"
+                alt="Complete Urine Examination"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Complete Urine Examination</h5>
+                <p class="card-text">
+                  Starting at <strong>₹ 165</strong>
+                  <span class="text-muted"><del>₹ 170</del></span>
+                </p>
+                <a
+                  href="javascript:;"
+                  onclick="goToByScroll('campaigns')"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/t3-t4.png"
+                class="card-img-top"
+                alt="Thyroid Profile"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Thyroid Profile (Total T3, Total T4, TSH)
+                </h5>
+                <p class="card-text">Starting at <strong>₹ 900</strong></p>
+                <a
+                  href="javascript:;"
+                  onclick="goToByScroll('campaigns')"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/hba1c.png"
+                class="card-img-top"
+                alt="HBA1C, Glycated Hemoglobin"
+              />
+              <div class="card-body">
+                <h5 class="card-title">HBA1C, Glycated Hemoglobin</h5>
+                <p class="card-text">Starting at <strong>₹ 500</strong></p>
+                <a
+                  href="javascript:;"
+                  onclick="goToByScroll('campaigns')"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/sensitive.png"
+                class="card-img-top"
+                alt="Culture and Sensitivity Urine"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Culture and Sensitivity Urine</h5>
+                <p class="card-text">Starting at <strong>₹ 850</strong></p>
+                <a
+                  href="javascript:;"
+                  onclick="goToByScroll('campaigns')"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/lipid.png"
+                class="card-img-top"
+                alt="Lipid Profile"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lipid Profile</h5>
+                <p class="card-text">Starting at <strong>₹ 750</strong></p>
+                <a
+                  href="javascript:;"
+                  onclick="goToByScroll('campaigns')"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/lft.png"
+                class="card-img-top"
+                alt="Liver Function Test (LFT)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Liver Function Test (LFT)</h5>
+                <p class="card-text">Starting at <strong>₹ 750</strong></p>
+                <a
+                  href="javascript:;"
+                  onclick="goToByScroll('campaigns')"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/crp.png"
+                class="card-img-top"
+                alt="C-reactive Protein CRP (Quantitative)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  C-reactive Protein CRP (Quantitative)
+                </h5>
+                <p class="card-text">Starting at <strong>₹ 450</strong></p>
+                <a
+                  href="javascript:;"
+                  onclick="goToByScroll('campaigns')"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/tsh.png"
+                class="card-img-top"
+                alt="Thyroid Stimulating Hormone (TSH), Serum"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Thyroid Stimulating Hormone (TSH), Serum
+                </h5>
+                <p class="card-text">
+                  Starting at <strong>₹ 300</strong>
+                  <span class="text-muted"><del>₹ 450</del></span>
+                </p>
+                <a
+                  href="javascript:;"
+                  onclick="goToByScroll('campaigns')"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2nd section All Package test -->
+    <section>
+      <div class="container ">
+        <div class="text-center mt-6 ">
+          <h4>Top Selling Tests Under INR 999/-</h4>
+          <p>Explore Our range of packages at a discounted price</p>
+        </div>
+        <div class="container my-4 position-relative ">
+          <div class="carousel-control carousel-control-prev" id="prevBtn">
+            <span aria-label="Previous">&lt;</span>
+          </div>
+          <div class="carousel-control carousel-control-next" id="nextBtn">
+            <span aria-label="Next">&gt;</span>
+          </div>
+          <div class="row g-4 card-container">
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="Images/harmons.png"
+                  class="card-img-top"
+                  alt="Basic Women Hormones Check"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Basic Women <br />Hormones Check</h5>
+                  <p class="card-text">
+                    Starting at <strong>₹ 499</strong>
+                    <span style="text-decoration: line-through">₹ 1540</span>
+                  </p>
+                  <a href="#bwhc" class="btn btn-primary">View Details</a>
+                  <a
+                    href="javascript:;"
+                    onclick="goToByScroll('campaigns')"
+                    class="btn btn-secondary"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="Images/basic-fullbody.png"
+                  class="card-img-top"
+                  alt="Regular Full Body Health Check"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">
+                    Regular Full Body <br />Health Check
+                  </h5>
+                  <p class="card-text">
+                    Starting at <strong>₹ 999</strong>
+                    <span style="text-decoration: line-through">₹ 1960</span>
+                  </p>
+                  <a href="#rfbhc" class="btn btn-primary">View Details</a>
+                  <a
+                    href="javascript:;"
+                    onclick="goToByScroll('campaigns')"
+                    class="btn btn-secondary"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="Images/fully-body-checkup.png"
+                  class="card-img-top"
+                  alt="Basic Full Body Check"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Basic Full Body <br />Check</h5>
+                  <p class="card-text">
+                    Starting at <strong>₹ 499</strong>
+                    <span style="text-decoration: line-through">₹ 1290</span>
+                  </p>
+                  <a href="#bfbc" class="btn btn-primary">View Details</a>
+                  <a
+                    href="javascript:;"
+                    onclick="goToByScroll('campaigns')"
+                    class="btn btn-secondary"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="Images/regular-women.png"
+                  class="card-img-top"
+                  alt="Regular Women Health Check"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Regular Women <br />Health Check</h5>
+                  <p class="card-text">
+                    Starting at <strong>₹ 999</strong>
+                    <span style="text-decoration: line-through">₹ 2420</span>
+                  </p>
+                  <a href="#rwhc" class="btn btn-primary">View Details</a>
+                  <a
+                    href="javascript:;"
+                    onclick="goToByScroll('campaigns')"
+                    class="btn btn-secondary"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="Images/heart-care.png"
+                  class="card-img-top"
+                  alt="Regular Heart Care"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Regular Heart Care</h5>
+                  <p class="card-text">
+                    Starting at <strong>₹ 999</strong>
+                    <span style="text-decoration: line-through">₹ 2279</span>
+                  </p>
+                  <a href="#rhc" class="btn btn-primary">View Details</a>
+                  <a
+                    href="javascript:;"
+                    onclick="goToByScroll('campaigns')"
+                    class="btn btn-secondary"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="Images/basic-heart-care.png"
+                  class="card-img-top"
+                  alt="Basic Heart Care"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Basic Heart <br />Care</h5>
+                  <p class="card-text">
+                    Starting at <strong>₹ 499</strong>
+                    <span style="text-decoration: line-through">₹ 1570</span>
+                  </p>
+                  <a href="#bhc" class="btn btn-primary">View Details</a>
+                  <a
+                    href="javascript:;"
+                    onclick="goToByScroll('campaigns')"
+                    class="btn btn-secondary"
+                    >Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--3rd Section Why Choose US-->
+
+    <section class="container py-5">
+      <div class="row bg-blue">
+        <div class="col-md-6">
+          <h4 class="text-blue">Why Choose us?</h4>
+          <p>
+            Shah Diagnostics is Kondhwa's largest and most reliable Diagnostic
+            Centre &amp; offering a wide range of diagnostic tests
+            &amp; procedures across the Kondhwa.
+          </p>
+          <p>
+            We at Shah Diagnostics believe in the principle of providing
+            quality, economical and accurate diagnostic services for patients
+            across age groups. We strive to furnish timely and precise reports
+            with zero error as we use a completely computerized mechanism for
+            our database. Our world-class diagnostic equipment and advanced
+            technology ensure that you get the best quality diagnosis at
+            affordable prices, so that you do not compromise with your health.
+          </p>
+          <p>
+            Our labs are NABL accredited and ISO Certified, with our Global
+            Reference Lab CAP Accredited.
+          </p>
+        </div>
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-6 mt-4 mb-4">
+              <div class="media">
+                <img
+                  src="Images/why-choose-us-icon1-a.png"
+                  class="mr-3"
+                  alt="Advanced Labs Icon"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">80+</h5>
+                  Test
+                </div>
+              </div>
+            </div>
+            <div class="col-6 mt-4 mb-4">
+              <div class="media">
+                <img
+                  src="Images/people.png"
+                  class="mr-3"
+                  alt="Trusted by Leading Doctors & Hospitals Icon"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Trusted by Leading</h5>
+                  Doctors &amp; Hospitals
+                </div>
+              </div>
+            </div>
+            <div class="col-6 mt-4 mb-4">
+              <div class="media">
+                <img
+                  src="Images/why-choose-us-icon3-a.png"
+                  class="mr-3"
+                  alt="Patient Care Centres Icon"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">1500+</h5>
+                  Trusted patients
+                </div>
+              </div>
+            </div>
+            <div class="col-6 mt-4 mb-4">
+              <div class="media">
+                <img
+                  src="Images/why-choose-us-icon4.png"
+                  class="mr-3"
+                  alt="Proficiency Testing Icon"
+                />
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Proficiency Testing for</h5>
+                  Accurate Reports
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Include Bootstrap CSS and JS -->
+
+    <script>
+      $(document).ready(function () {
+        $("#prevBtn").click(function () {
+          var leftPos = $(".card-container").scrollLeft();
+          $(".card-container").animate({ scrollLeft: leftPos - 300 }, 800);
+        });
+
+        $("#nextBtn").click(function () {
+          var leftPos = $(".card-container").scrollLeft();
+          $(".card-container").animate({ scrollLeft: leftPos + 300 }, 800);
+        });
+      });
+    </script>
+
+    <script>
+      const cardContainer = document.querySelector(".card-container");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      prevBtn.addEventListener("click", () => {
+        cardContainer.scrollBy({
+          left: -cardContainer.offsetWidth,
+          behavior: "smooth",
+        });
+      });
+
+      nextBtn.addEventListener("click", () => {
+        cardContainer.scrollBy({
+          left: cardContainer.offsetWidth,
+          behavior: "smooth",
+        });
+      });
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:  url('Images/Lab-Banner.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+}
+
+
+.call1:before {
+    background-color: #99dae7;
+    position: absolute;
+    content: '';
+    top: 40%;
+    left: -85px;
+    background: url(../Images/phone-icon.png) left top no-repeat;
+    
+    width: 69px;
+    height: 70px;
+}
+
+.call1 {
+    float: right;
+    padding: 50px 20px 0 0;
+    width: auto;
+    font-size: 25px;
+    line-height: 1.1;
+    font-family: robotoregular;
+    color: #282828;
+    display: block;
+    position: relative;
+}
+.background{
+    background-color: #99dae7;
+}
+
